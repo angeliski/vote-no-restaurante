@@ -96,7 +96,7 @@
 				<version>1.0</version>
 
 				<configuration>
-					<workingDirectory>src/main/webapp/resources/js/tests</workingDirectory>
+					<workingDirectory>src/main/webapp/resources/js/build</workingDirectory>
 					<nodeVersion>v5.7.0</nodeVersion>
 					<npmVersion>3.6.0</npmVersion>
 					<installDirectory>target</installDirectory>
@@ -126,7 +126,7 @@
 						</goals>
 						<phase>test</phase>
 						<configuration>
-							<karmaConfPath>karma.conf.js</karmaConfPath>
+							<karmaConfPath>../tests/karma.conf.js</karmaConfPath>
 						</configuration>
 					</execution>
 				</executions>

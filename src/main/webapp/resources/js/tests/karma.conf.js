@@ -1,19 +1,19 @@
 module.exports = function(config) {
 	config.set({
-		basePath : '',
+		basePath : '../',
 		frameworks : [ 'jasmine' ],
     files: [
-      'node_modules/highcharts/highcharts.js',
-      'node_modules/angular/angular.js',
-      'node_modules/angular-mocks/angular-mocks.js',
-      'node_modules/angular-resource/angular-resource.js',
-      'node_modules/angular-ui-router/release/angular-ui-router.js',
-      'node_modules/angular-animate/angular-animate.js',
-      '../app.js',
-      '../controllers/*.js',
-      '../directives/graphicVotes/*.js',
-      '../services/*.js',
-      'specs/*.js'
+      'build/node_modules/highcharts/highcharts.js',
+      'build/node_modules/angular/angular.js',
+      'build/node_modules/angular-mocks/angular-mocks.js',
+      'build/node_modules/angular-resource/angular-resource.js',
+      'build/node_modules/angular-ui-router/release/angular-ui-router.js',
+      'build/node_modules/angular-animate/angular-animate.js',
+      'app.js',
+      'controllers/*.js',
+      'directives/graphicVotes/*.js',
+      'services/*.js',
+      'tests/specs/*.js'
     ],
 		reporters : [ 'progress' ],
 		port : 9876,
