@@ -1,4 +1,4 @@
-angular.module("voteRestaurant").controller("voteController", function($scope, $state, RestaurantService) {
+angular.module("voteRestaurant").controller("voteController", ['$scope','$state','RestaurantService', function($scope, $state, RestaurantService) {
 	$scope.viewRestaurant = [];
 	$scope.votes = [];
 
@@ -24,4 +24,4 @@ angular.module("voteRestaurant").controller("voteController", function($scope, $
 		});
 	}
 
-});
+}]);

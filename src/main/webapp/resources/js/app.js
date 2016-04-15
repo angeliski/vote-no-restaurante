@@ -1,6 +1,6 @@
 var app = angular.module("voteRestaurant", [ 'ngResource','ui.router', 'ngAnimate' ]);
 
-app.config(function($stateProvider, $urlRouterProvider) {
+app.config(['$stateProvider','$urlRouterProvider',function($stateProvider, $urlRouterProvider) {
 
 	$urlRouterProvider.otherwise('/vote');
 
@@ -18,4 +18,4 @@ app.config(function($stateProvider, $urlRouterProvider) {
 		templateUrl : 'resources/views/ranking.jsp'
 	});
 
-});
+}]);

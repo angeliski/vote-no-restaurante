@@ -1,4 +1,4 @@
-angular.module('voteRestaurant').service('VoteService', function($resource, $http) {
+angular.module('voteRestaurant').service('VoteService', ['$resource', function($resource) {
 	var resource = $resource('vote/:id');
 	
 	this.getVotes = function(cb) {
@@ -12,4 +12,4 @@ angular.module('voteRestaurant').service('VoteService', function($resource, $htt
 			cb(graphicData);
 		});
 	}
-});
+}]);

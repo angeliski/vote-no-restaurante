@@ -129,6 +129,13 @@
 							<karmaConfPath>../tests/karma.conf.js</karmaConfPath>
 						</configuration>
 					</execution>
+					<execution>
+						<id>gulp build</id>
+						<goals>
+							<goal>gulp</goal>
+						</goals>
+						<phase>generate-resources</phase>
+					</execution>
 				</executions>
 			</plugin>
 		</plugins>

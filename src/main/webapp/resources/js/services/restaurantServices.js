@@ -1,4 +1,4 @@
-angular.module('voteRestaurant').service('RestaurantService', function($resource, $http) {
+angular.module('voteRestaurant').service('RestaurantService', ['$resource','$http', function($resource, $http) {
 	var that = this, resource = $resource('restaurant/:id'), count = 0, userVotes;
 	
 	that.restaurants = resource.query();
@@ -33,4 +33,4 @@ angular.module('voteRestaurant').service('RestaurantService', function($resource
 		}).success(cb);
 	}
 
-});
+}]);

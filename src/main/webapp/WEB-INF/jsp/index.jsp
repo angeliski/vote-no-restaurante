@@ -4,8 +4,9 @@
 <title>Vote no Restaurante</title>
 <link rel="stylesheet"
 	href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="resources/css/style.css">
-<link rel="stylesheet" href="resources/css/animations.css">
+<!-- gulp build -->
+<link rel="stylesheet" href="resources/dist/style.min.css">
+
 </head>
 <body>
 
@@ -23,21 +24,9 @@
 	<script
 		src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular-resource.min.js"></script>
 
-
-	<script type="text/javascript" src="resources/js/app.js"></script>
-	<script type="text/javascript"
-		src="resources/js/services/restaurantServices.js"></script>
-	<script type="text/javascript"
-		src="resources/js/services/voteServices.js"></script>
-
-	<script type="text/javascript"
-		src="resources/js/directives/graphicVotes/graphicVotesDirective.js"></script>
-
-	<script type="text/javascript"
-		src="resources/js/controllers/voteController.js"></script>
-	<script type="text/javascript"
-		src="resources/js/controllers/registerController.js"></script>
-
+	<!-- gulp build -->
+	<script type="text/javascript" src="resources/dist/script.min.js"></script>
+	
 	<script type="text/javascript"
 		src="https://code.highcharts.com/highcharts.js"></script>
 </body>
